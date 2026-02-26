@@ -254,10 +254,10 @@ El auto-scaling está configurado con 3 políticas:
 - ALB Access Logs para auditoría
 - CloudWatch Alarms para monitoreo proactivo
 
-## Características Destacadas
+## Características 
 
 ### Optimización de Costos
-- **NAT optimizado:** 1 NAT en dev, 2 en prod
+- **NAT optimizado:**  2 en prod
 - **Lifecycle policies:** Eliminación automática de logs antiguos
 - **Auto-scaling:** Escala según demanda real
 
