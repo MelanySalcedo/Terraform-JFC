@@ -44,5 +44,5 @@ variable "master_password" {
 variable "instance_class" {
   description = "Instance class for Aurora instances"
   type        = string
-  default     = "db.r6g.medium"
+  default     = "db.t4g.medium"
 }
