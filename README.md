@@ -1,4 +1,3 @@
-# Terrafor-JFC
 # JFC E-Commerce - Terraform Infrastructure
 
 Infraestructura como código para la aplicación de e-commerce de JFC en AWS.
