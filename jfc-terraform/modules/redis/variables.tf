@@ -32,7 +32,7 @@ variable "auth_token" {
 variable "node_type" {
   description = "Node type for Redis instances"
   type        = string
-  default     = "cache.r6g.medium"
+  default     = "cache.t3.medium"
 }
 
 variable "sns_topic_arn" {
