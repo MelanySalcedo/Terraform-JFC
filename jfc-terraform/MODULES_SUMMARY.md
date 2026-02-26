@@ -49,8 +49,8 @@
 **Componentes:**
 - Aurora MySQL 8.0 Cluster
 - 2 Instancias:
-  - Writer (db.r6g.medium)
-  - Reader (db.r6g.medium)
+  - Writer (db.t4g.medium)
+  - Reader (db.t4g.medium)
 - Multi-AZ con failover automático
 - Backups automáticos (7 días)
 - Performance Insights habilitado
