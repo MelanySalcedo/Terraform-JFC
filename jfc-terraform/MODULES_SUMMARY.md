@@ -69,8 +69,8 @@
 **Componentes:**
 - ElastiCache Redis 7.1
 - Replication Group:
-  - 1 Primary (cache.r6g.medium)
-  - 1 Replica (cache.r6g.medium)
+  - 1 Primary (cache.t3.medium)
+  - 1 Replica (cache.t3.medium)
 - Multi-AZ con failover automático
 - Auth token habilitado
 - Cifrado en tránsito (TLS)
@@ -124,7 +124,7 @@
 
 ---
 
-## 📁 Configuración de Producción (`environments/prod/`)
+## Configuración de Producción (`environments/prod/`)
 
 **Archivos:**
 - `main.tf`: Orquesta todos los módulos + EFS + S3 + ECR
@@ -158,48 +158,6 @@
 
 **Total:** ~50 recursos AWS
 
----
-
-## Costos Estimados
-
-| Servicio | Costo Mensual |
-|----------|---------------|
-| ECS Fargate (4 tareas) | $71-89 |
-| Aurora Provisioned | $230 |
-| ElastiCache Redis | $155 |
-| ALB | $25-35 |
-| NAT Gateway (2) | $65 |
-| S3 + CloudFront | $50-85 |
-| EFS | $15 |
-| **Total** | **~$611-674/mes** |
-
----
-
-## Características de Seguridad
-
-✅ Cifrado en tránsito (TLS 1.3)
-✅ Cifrado en reposo (KMS)
-✅ Secrets Manager para credenciales
-✅ Security Groups con mínimo privilegio
-✅ IAM Roles con políticas específicas
-✅ VPC Endpoints (sin tráfico por internet)
-✅ Private subnets para app y datos
-✅ ECR con escaneo de vulnerabilidades
-✅ ECS Exec para debugging seguro
-
----
-
-## Características de Escalabilidad
-
-✅ Auto-scaling basado en CPU, Memory y Requests
-✅ Multi-AZ para alta disponibilidad
-✅ Aurora con failover automático
-✅ Redis con failover automático
-✅ ECS con circuit breaker y rollback
-✅ ALB con health checks
-✅ EFS para archivos compartidos entre tareas
-
----
 
 ## Documentación
 
