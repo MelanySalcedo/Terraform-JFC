@@ -1,0 +1,30 @@
+# Production Environment Configuration
+# Copy this file to terraform.tfvars and fill in the values
+
+project_name = "jfc"
+aws_region   = "us-east-1"
+
+# Container image from ECR
+# Format: <account-id>.dkr.ecr.us-east-1.amazonaws.com/jfc-app:latest
+container_image = "REPLACE_WITH_YOUR_ECR_IMAGE_URL"
+
+# ACM Certificate ARN for HTTPS
+# Create certificate in ACM first, then paste ARN here
+acm_certificate_arn = "REPLACE_WITH_YOUR_ACM_CERTIFICATE_ARN"
+
+# CloudFront domain aliases (optional)
+# Example: ["www.jfc-ecommerce.com", "jfc-ecommerce.com"]
+cloudfront_aliases = []
+
+# Database credentials (use strong passwords)
+db_username = "admin"
+db_password = "REPLACE_WITH_STRONG_PASSWORD"
+
+# Redis auth token (use strong token)
+redis_auth_token = "REPLACE_WITH_STRONG_TOKEN"
+
+# Email for CloudWatch alarms (optional)
+alarm_email = "your-email@example.com"
+
+# Route 53 Domain (optional - uncomment if you manage the domain)
+# domain_name = "jfc-ecommerce.com"
